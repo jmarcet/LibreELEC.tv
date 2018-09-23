@@ -39,5 +39,6 @@ make_target() {
 }
 
 makeinstall_target() {
-  : # nop
+  mkdir -p $INSTALL/usr/bin
+  cp -a unrar $INSTALL/usr/bin
 }
