@@ -34,7 +34,9 @@ PKG_CONFIGURE_OPTS_TARGET="--enable-static \
                            --with-curses \
                            --enable-readline \
                            --without-bash-malloc \
-                           --with-installed-readline"
+                           --with-installed-readline \
+                           --bindir=/usr/local/bin \
+                           --sbindir=/usr/local/sbin"
 
 pre_configure_target() {
   export LIBS="-lterminfo"
