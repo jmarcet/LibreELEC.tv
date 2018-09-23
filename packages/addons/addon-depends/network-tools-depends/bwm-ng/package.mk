@@ -39,7 +39,3 @@ PKG_CONFIGURE_OPTS_TARGET="--with-libstatgrab \
 pre_configure_target() {
   export LIBS="-ltermcap"
 }
-
-makeinstall_target() {
-  : # nop
-}
