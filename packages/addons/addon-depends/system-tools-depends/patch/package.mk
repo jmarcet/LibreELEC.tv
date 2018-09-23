@@ -29,7 +29,3 @@ PKG_LONGDESC="Patch takes a patch file containing a difference listing produced 
 PKG_AUTORECONF="no"
 
 PKG_CONFIGURE_OPTS_TARGET="--disable-xattr"
-
-makeinstall_target() {
-  : # nop
-}
