@@ -45,5 +45,6 @@ pre_configure_target() {
 }
 
 makeinstall_target() {
-  : # nop
+  mkdir -p $INSTALL/usr/bin
+  cp -a nmap $INSTALL/usr/bin
 }
