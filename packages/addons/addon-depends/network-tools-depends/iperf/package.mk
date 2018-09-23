@@ -29,7 +29,3 @@ PKG_LONGDESC="Iperf was developed by NLANR/DAST as a modern alternative for meas
 PKG_AUTORECONF="yes"
 
 PKG_CONFIGURE_OPTS_TARGET="--enable-static --disable-shared"
-
-makeinstall_target() {
-  : # nop
-}
