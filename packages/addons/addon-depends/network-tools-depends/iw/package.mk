@@ -33,7 +33,3 @@ pre_configure_target() {
 
   export LDFLAGS="$LDFLAGS -pthread"
 }
-
-makeinstall_target() {
-  : # meh
-}
