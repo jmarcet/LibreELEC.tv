@@ -29,5 +29,6 @@ PKG_LONGDESC="generic HID mapper"
 PKG_AUTORECONF="no"
 
 makeinstall_target() {
-  : # nope
+  mkdir -p $INSTALL/usr/bin
+  cp -a hid_mapper $INSTALL/usr/bin
 }
