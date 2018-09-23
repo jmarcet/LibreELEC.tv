@@ -34,5 +34,6 @@ make_target() {
 }
 
 makeinstall_target() {
-  : # nop
+  mkdir -p $INSTALL/usr/bin
+  cp -a bin/* $INSTALL/usr/bin
 }
