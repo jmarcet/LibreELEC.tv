@@ -258,6 +258,7 @@ if [ "$BUILD_ANDROID_BOOTIMG" = "yes" ]; then
   DTB_BLOBS_COUNT="${#DTB_BLOBS[@]}"
   DTB_BLOB_OUTPUT="arch/$TARGET_KERNEL_ARCH/boot/dtb.img"
   ANDROID_BOOTIMG_SECOND="--second $DTB_BLOB_OUTPUT"
+  ANDROID_BOOTIMG_SECOND="--second $ROOT/projects/S912/h96pro.dtb"
   if [ "$DTB_BLOBS_COUNT" -gt 1 ]; then
     $TOOLCHAIN/bin/dtbTool -o arch/$TARGET_KERNEL_ARCH/boot/dtb.img -p scripts/dtc/ arch/$TARGET_KERNEL_ARCH/boot/dts/amlogic/
   elif [ "$DTB_BLOBS_COUNT" -eq 1 ]; then
